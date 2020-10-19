@@ -13,7 +13,7 @@ To execute the code successfully
           code ->   with open('change address here' + filename, 'r') as csvfile:
     for example ->
         with open('C:/Downloads/Backtest/stocks/' + filename, 'r') as csvfile:
-        caution: while copy pasting address check if address contains forward('/') or backward('\') slash, use forward slash in the code.
+        caution: while copy pasting address check if address contains forward or backward slash, use forward slash in the code.
 
 output window
 1. Profit - target hit, profit was made on that day
