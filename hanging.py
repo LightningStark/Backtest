@@ -1,39 +1,36 @@
-from result import statement
 import GlobVar
-global win; global lose
-global WINS;global LOSSES
+
 # BUYING STOCKS
+def Hanging(self):
+    
+    lowest = self.low
+    n = 0
 
-def hangingengulf(data,csvreader):
-	
-	WINS = [];LOSSES = [];win = 0; lose = 0
-	print("\n HangingEngulf || Long")
+    if ((self.open > (((self.high - self.low)*0.4) + self.low)) & (self.close > (((self.high - self.low)*0.4) + self.low)) 
+        & (self.open < self.close) & (self.close * 0.99 < self.nextopen < self.close * 1.01)):
 
-	for i in range(2,csvreader.line_num-1):
-		PerDly  = float(data[i][14]);volume = float (data[i][10]); date = data [i+1][2]; nextvolume = (data[i+1][10])
-		prevopen = float(data[i-1][4]);prevhigh = float(data[i-1][5]); prevlow = float (data[i-1][6]);prevclose = float (data[i-1][8])
-		open = float(data[i][4]); high = float(data[i][5]); low = float (data[i][6]);close = float (data[i][8])
-		nextopen = float(data[i+1][4]); nexthigh = float(data[i+1][5]); nextlow = float (data[i+1][6]);nextclose = float (data[i+1][8])
-		
+        for j in range(self.i - 10, self.i):
+            dailylow = float(self.data[j][6])
+            if (lowest < dailylow):
+                n += 1
+                if (n == 10):
+                    
+                    closediff = ((self.nextclose - self.close) * 100) / self.close
+ 
+                    if (self.tgtper >= 0.5):
 
-		if ((prevopen > (((prevhigh-prevlow)/2)+prevlow)) & (prevclose > (((prevhigh-prevlow)/2)+prevlow)) & (open < prevclose)  
-			 & (open < prevopen) & (close > open) & (close > prevclose) & (close > prevopen)): 
+                        GlobVar.RESULT.insert(GlobVar.count, ["",self.date, self.PevDlypercent, self.tgtper, closediff,"Profit"])
+                        GlobVar.totalwin += 1
+                        GlobVar.count +=1
+                        GlobVar.tradecount += 1
+                        GlobVar.points = GlobVar.points + (self.nextopen * 0.5 / 100)
 
-			entryprice = nextopen; stoploss = low*0.99; target = nextopen*1.01; days = 1; GlobVar.tradecount += 1
-			
-			for j in range(i+1,csvreader.line_num):
-				newhigh= float(data[j][5]);newlow = float (data[j][6]);
-								
-				if (newhigh >= target):
-					
-					WINS.insert(win,[date,days,'T',PerDly]);win += 1;GlobVar.totalwin += 1
-					break
-				
-				elif (newlow <= stoploss):
-					
-					LOSSES.insert(lose,[date,days,'SL',PerDly]);lose += 1
-					break
-				
-				days += 1
+                    else:
 
-	statement(WINS,LOSSES)
+                        GlobVar.RESULT.insert(GlobVar.count, ["",self.date, self.PevDlypercent, self.tgtper, closediff,"Loss"])
+                        GlobVar.totallose += 1
+                        GlobVar.count +=1
+                        GlobVar.tradecount += 1
+                        GlobVar.points = GlobVar.points - (self.nextopen - self.nextclose)
+            else:
+                break
