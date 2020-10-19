@@ -1,6 +1,6 @@
 # Backtest 
 
-Stock market data Backtesting to develop a Trading Strategy for Intraday Trades 
+Stock market data Backtesting to develop a Trading Strategy for Intraday Trades, 
 Historical data of stocks was downloaded from NSE(india) website.
 This software was made only for personal use, currently I have no intentions of scaling it(improved version, Ofcourse!) for commercial purpose.  
 To test your own strategy edit files like - 'Pinbar.py', 'BullEngulf.py' accordingly
