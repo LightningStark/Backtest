@@ -42,7 +42,7 @@ def test():
             GlobVar.count += 1
 
             # reading csv file
-            with open('C:/Users/umang/source/repos/PythonApplication1/stocks/' + filename, 'r') as csvfile:
+            with open('C:/Users/umang/Desktop/New folder/Backtest/stocks/' + filename, 'r') as csvfile:
                 # creating a csv reader object
                 csvreader = csv.reader(csvfile)
                 data = list(csvreader)

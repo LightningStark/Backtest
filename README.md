@@ -13,7 +13,7 @@ To execute the code successfully
           code ->   with open('change address here' + filename, 'r') as csvfile:
     for example ->
         with open('C:/Downloads/Backtest/stocks/' + filename, 'r') as csvfile:
-        caution: while copy pasting address check if address contains forward(/) or backward(\) slash, use forward slash in the code.
+        caution: while copy pasting address check if address contains forward('/') or backward('\') slash, use forward slash in the code.
 
 output window
 1. Profit - target hit, profit was made on that day
@@ -22,7 +22,7 @@ output window
 future updates 
 1. Add textboxes for target and stoploss
 2. removal of known bugs
-3. removal of stcok enteries with no trades, currently you will observe there are stocks on output window with corresponding empty cells
+3. removal of stock enteries with no trades, currently you will observe there are stocks on output window with corresponding empty cells
 4. create and save new strategies
-5. swing trading(Long Position - holding stock position more than one day) with moving averages(MA)
+5. swing trading(Long Position - holding stock position more for than one day) with moving averages(MA)
 
