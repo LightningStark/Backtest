@@ -54,7 +54,6 @@ def test():
 
                     # access attributes
                     stock.execute()
-                    del stock
     else:
         print("please select buy or sell")
         message = StringVar()
