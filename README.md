@@ -1,4 +1,7 @@
-# Test of Intraday Trades
+# Testing of Intraday Trades
+# run Main.py using python interpreter to use interactive window
+# At first click on browse and select stocks Folder
+
 
 Stock market data Backtesting to develop and Test Trading Strategy for Intraday Trades, 
 Historical data of stocks were downloaded from India Stock Exchange's website.
@@ -8,12 +11,6 @@ To create your own strategy create new files similar to - 'Pinbar/HangingMan/Bea
 To execute the code successfully
 1. python version >3.0 required
 2. required python packages: pandas, PyQt5
-3. locate and change below line in Backtest.py file with address for stocks folder you have downloaded/cloned it.
-      change address between single quotes('') according to download folder location 
-          code ->   with open('change address here' + filename, 'r') as csvfile:
-    for example ->
-        with open('C:/Downloads/Backtest/stocks/' + filename, 'r') as csvfile:
-        caution: while copy pasting address check if address contains forward or backward slash, use forward slash in the code.
 
 output window
 1. Profit - target hit, profit was made on that day
