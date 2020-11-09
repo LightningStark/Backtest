@@ -2,7 +2,7 @@ import GlobVar
 
 
 # BUYING STOCKS
-def Hanging(self):
+def HangingMan(self):
     if ((self.open > (((self.high - self.low) * 0.4) + self.low))
             & (self.close > (((self.high - self.low) * 0.4) + self.low)) & (self.open < self.close)
             & (self.close * self.Entry_LowerLimit < self.nextopen < self.close * self.Entry_UpperLimit)):
@@ -17,7 +17,7 @@ def Hanging(self):
                 n += 1
                 if n == self.offset:
 
-                    closediff = ((self.nextclose - self.close) * 100) / self.close
+                    closediff = "{:.2f}".format(((self.nextclose - self.close) * 100) / self.close)
 
                     if self.TargetUpto >= self.Target:
 

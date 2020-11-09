@@ -1,5 +1,5 @@
 from Pinbar import Pinbar
-from Hanging import Hanging
+from HangingMan import HangingMan
 from BearEngulf import BearEngulf
 from BullEngulf import BullEngulf
 import GlobVar
@@ -7,9 +7,9 @@ import GlobVar
 
 def RdButtonSelected(self):
     if GlobVar.rd_button_selected == "BUY":
-        self.TargetUpto = ((self.nexthigh - self.EntryPrice) / self.EntryPrice) * 100
+        self.TargetUpto = float("{:.2f}".format(((self.nexthigh - self.EntryPrice) / self.EntryPrice) * 100))
     if GlobVar.rd_button_selected == "SELL":
-        self.TargetUpto = ((self.EntryPrice - self.nextlow) / self.EntryPrice) * 100
+        self.TargetUpto = float("{:.2f}".format(((self.EntryPrice - self.nextlow) / self.EntryPrice) * 100))
 
 
 class Strategy:
@@ -58,4 +58,4 @@ class Strategy:
         if (GlobVar.strategy == "BullEngulf"):
             BullEngulf(self)
         if (GlobVar.strategy == "HangingMan"):
-            Hanging(self)
+            HangingMan(self)

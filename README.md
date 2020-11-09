@@ -23,12 +23,11 @@ Alpha version
 - first implemantation of gui with Tkinkter
 
 Beta Version(current)
--Better Gui with PyQt5,
+-Better Gui with PyQt5
 
 future updates 
 1. executable File, for 1 Click Install and run
-2. Address Bar
-3. removal of stock enteries with no trades, currently you will observe there are stocks on output window with corresponding empty cells
-4. create and save new strategies
-5. swing trading(Long Position - holding stock position more for than one day) with moving averages(MA)
+2. removal of stock enteries with no trades, currently you will observe there are stocks on output window with corresponding empty cells
+3. create and save new strategies
+4. swing trading(Long Position - holding stock position more for than one day) with moving averages(MA)
 
