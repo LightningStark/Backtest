@@ -158,3 +158,8 @@ class Ui_MainWindow(object):
         self.label_12.setText(_translate("MainWindow", "%"))
         self.pushButton_2.setText(_translate("MainWindow", "Browse"))
         self.label_13.setText(_translate("MainWindow", "First Select \"Stock\" Folder"))
+        self.plainTextEdit.setPlainText("1")
+        self.plainTextEdit_2.setPlainText("2")
+        self.plainTextEdit_3.setPlainText("-1")
+        self.plainTextEdit_4.setPlainText("1")
+        self.plainTextEdit_5.setPlainText("14")
