@@ -1,12 +1,13 @@
-import sys
 from PyQt5 import QtWidgets
 from HomeWindow import Ui_MainWindow
-import csv
+import csv, sys
 from Mycollection import Strategy
 import GlobVar
 import pandas as pd
 from Report import Ui_ReportWindow
-
+from PyQt5.QtWidgets import QFileDialog, QMainWindow
+from pathlib import Path
+from BrowsingDirectories import FileDialog
 
 def Buy_Selected():
     GlobVar.rd_button_selected = "BUY"
@@ -24,6 +25,12 @@ def Change_in_Strategy_Value(self):
 
 def Change_in_Entry_Value(self):
     GlobVar.EntryAt = str(ui.comboBox_2.currentText())
+
+def showDialog(self):
+
+    fd = FileDialog()
+    fd.showDialog()
+    ui.label_13.setText(GlobVar.Directory)
 
 
 def btnClicked():
@@ -60,7 +67,7 @@ def btnClicked():
             GlobVar.count += 1
 
             # reading csv file
-            with open('/home/umang/Desktop/repos/Backtest/stocks/' + filename, 'r') as csvfile:
+            with open(str(GlobVar.Directory) + '/' + filename, 'r') as csvfile:
 
                 # creating a csv reader object
                 csvreader = csv.reader(csvfile)
@@ -103,6 +110,7 @@ if __name__ == "__main__":
     ui.radioButton.toggled.connect(Buy_Selected)
     ui.radioButton_2.toggled.connect(Sell_Selected)
     ui.pushButton.clicked.connect(btnClicked)
+    ui.pushButton_2.clicked.connect(showDialog)
     ui.comboBox.activated.connect(Change_in_Strategy_Value)
     ui.comboBox_2.activated.connect(Change_in_Entry_Value)
     MainWindow.show()

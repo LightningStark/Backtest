@@ -8,3 +8,4 @@ count = 0
 rd_button_selected = []
 EntryAt = []
 strategy = []
+Directory = []

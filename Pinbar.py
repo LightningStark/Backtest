@@ -19,7 +19,7 @@ def Pinbar(self):
                 n += 1
                 if n == self.offset:
 
-                    closediff = ((self.nextclose - self.close) * 100) / self.close
+                    closediff = "{:.2f}".format(((self.nextclose - self.close) * 100) / self.close)
 
                     if self.TargetUpto >= self.Target:
 

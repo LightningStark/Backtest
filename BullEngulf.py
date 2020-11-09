@@ -20,7 +20,7 @@ def BullEngulf(self):
 
                 if n == self.offset - 1:
 
-                    closediff = ((self.nextclose - self.close) * 100) / self.nextopen
+                    closediff = "{:.2f}".format(((self.nextclose - self.close) * 100) / self.close)
 
                     if self.TargetUpto >= self.Target:
 
