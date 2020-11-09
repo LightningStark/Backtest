@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0cbfa75-a414-48f4-97ed-9ee5a017c385" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Backtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BearEngulf.py" beforeDir="false" afterPath="$PROJECT_DIR$/BearEngulf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BullEngulf.py" beforeDir="false" afterPath="$PROJECT_DIR$/BullEngulf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GlobVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GlobVar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hanging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hanging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mycollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mycollection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pinbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pinbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/adanient.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/adanient.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/auropharma.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/auropharma.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bajfinance.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bajfinance.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bandhanbnk.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bandhanbnk.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bergepaint.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bergepaint.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bhel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bhel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/bpcl.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/bpcl.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/cholafin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/cholafin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/chollafin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/chollafin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/cipla.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/cipla.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/exideind.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/exideind.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/heromotoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/heromotoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/infratel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/infratel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/infy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/infy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/jublfood.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/jublfood.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/maruti.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/maruti.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/mfsl.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/mfsl.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/mindtree.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/mindtree.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/pel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/pel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/ramcocem.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/ramcocem.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/reliance.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/reliance.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/siemens.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/siemens.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/srtransfin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/srtransfin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/suntv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/suntv.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/tatachem.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/tatachem.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/tatasteel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/tatasteel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/ujjivan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/ujjivan.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/vedl.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/vedl.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k1K1myrIjsbly101mM8Lyy20UR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Extras" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cooking" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extras/cooking.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="one" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extras/one.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pandasqt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extras/pandasqt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="program" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Backtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extras/program.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.cooking" />
+        <item itemvalue="Python.program" />
+        <item itemvalue="Python.pandasqt" />
+        <item itemvalue="Python.one" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0cbfa75-a414-48f4-97ed-9ee5a017c385" name="Default Changelist" comment="" />
+      <created>1604862450137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604862450137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="106" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604866059510">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state x="106" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1296.741@0.27.1296.741" timestamp="1604866059510" />
+    <state x="381" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604867536340">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state x="381" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1296.741@0.27.1296.741" timestamp="1604867536340" />
+    <state width="1273" height="108" key="GridCell.Tab.0.bottom" timestamp="1604881138148">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state width="1273" height="108" key="GridCell.Tab.0.bottom/0.27.1296.741@0.27.1296.741" timestamp="1604881138148" />
+    <state width="1273" height="108" key="GridCell.Tab.0.center" timestamp="1604881138147">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state width="1273" height="108" key="GridCell.Tab.0.center/0.27.1296.741@0.27.1296.741" timestamp="1604881138147" />
+    <state width="1273" height="108" key="GridCell.Tab.0.left" timestamp="1604881138147">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state width="1273" height="108" key="GridCell.Tab.0.left/0.27.1296.741@0.27.1296.741" timestamp="1604881138147" />
+    <state width="1273" height="108" key="GridCell.Tab.0.right" timestamp="1604881138147">
+      <screen x="0" y="27" width="1296" height="741" />
+    </state>
+    <state width="1273" height="108" key="GridCell.Tab.0.right/0.27.1296.741@0.27.1296.741" timestamp="1604881138147" />
+  </component>
+</project>
