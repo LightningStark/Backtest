@@ -5,4 +5,6 @@ totallose = 0
 points = 0
 RESULT = []
 count = 0
-Rd_Button_Selected = []
+rd_button_selected = []
+EntryAt = []
+strategy = []

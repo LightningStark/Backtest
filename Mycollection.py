@@ -2,15 +2,22 @@ from Pinbar import Pinbar
 from Hanging import Hanging
 from BearEngulf import BearEngulf
 from BullEngulf import BullEngulf
+import GlobVar
+
+
+def RdButtonSelected(self):
+    if GlobVar.rd_button_selected == "BUY":
+        self.TargetUpto = ((self.nexthigh - self.EntryPrice) / self.EntryPrice) * 100
+    if GlobVar.rd_button_selected == "SELL":
+        self.TargetUpto = ((self.EntryPrice - self.nextlow) / self.EntryPrice) * 100
+
 
 class Strategy:
-    'Common base class for all strategies'
+    """Common base class for all strategies"""
 
-
-    def __init__(self, data, csvreader,i,strat,Rd_Button_Selected):
+    def __init__(self, data, csvreader, i, Days, Target, Stoploss, Entry_LowerLimit, Entry_UpperLimit):
         self.data = data
         self.csvreader = csvreader
-        self.strat = strat
         self.i = i
         self.PevDlypercent = float(data[i][14])
         self.volume = float(data[i][10])
@@ -28,23 +35,27 @@ class Strategy:
         self.nexthigh = float(data[i + 1][5])
         self.nextlow = float(data[i + 1][6])
         self.nextclose = float(data[i + 1][8])
-        
-        if(Rd_Button_Selected == "BUY"):
-            self.tgtper = ((self.nexthigh - self.nextopen) / self.nextopen) * 100
-        if(Rd_Button_Selected == "SELL"):
-            self.tgtper = ((self.nextopen - self.nextlow) / self.nextopen) * 100
+        self.Target = Target
+        self.Days = Days
+        self.Stoploss = Stoploss
+        self.Entry_LowerLimit = 1 + (0.01 * Entry_LowerLimit)
+        self.Entry_UpperLimit = 1 + (0.01 * Entry_UpperLimit)
+        if GlobVar.EntryAt == "Next Open":
+            self.EntryPrice = self.nextopen
+            RdButtonSelected(self)
 
- ### trading strategies
+        if GlobVar.EntryAt == "Close":
+            self.EntryPrice = self.close
+            RdButtonSelected(self)
+
+    # trading strategies
     def execute(self):
-        if(self.strat == "Pinbar"):    
+
+        if (GlobVar.strategy == "Pinbar"):
             Pinbar(self)
-        if(self.strat == "BearEngulf"):    
+        if (GlobVar.strategy == "BearEngulf"):
             BearEngulf(self)
-        if(self.strat == "BullEngulf"):    
+        if (GlobVar.strategy == "BullEngulf"):
             BullEngulf(self)
-        if(self.strat == "Hanging"):    
+        if (GlobVar.strategy == "HangingMan"):
             Hanging(self)
-        
-
-
-
