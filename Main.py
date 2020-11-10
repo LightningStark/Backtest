@@ -1,13 +1,12 @@
 from PyQt5 import QtWidgets
-from HomeWindow import Ui_MainWindow
+from HomeWindow import Ui_HomeWindow
 import csv, sys
 from Mycollection import Strategy
 import GlobVar
 import pandas as pd
-from Report import Ui_ReportWindow
-from PyQt5.QtWidgets import QFileDialog, QMainWindow
-from pathlib import Path
-from BrowsingDirectories import FileDialog
+from ReportWindow import Ui_MainWindow_3
+from BrowsingWindow import FileDialog
+from Alert import Ui_AlertWindow
 
 def Buy_Selected():
     GlobVar.rd_button_selected = "BUY"
@@ -26,7 +25,7 @@ def Change_in_Strategy_Value(self):
 def Change_in_Entry_Value(self):
     GlobVar.EntryAt = str(ui.comboBox_2.currentText())
 
-def showDialog(self):
+def BrowseDialog(self):
 
     fd = FileDialog()
     fd.showDialog()
@@ -58,7 +57,7 @@ def btnClicked():
     GlobVar.count = 0
     GlobVar.RESULT = []
 
-    if len(GlobVar.rd_button_selected) != 0:
+    if (len(GlobVar.rd_button_selected) != 0) & (len(GlobVar.Directory) != 0):
         for k in stocks:
             # csv file name
             filename = k + ".csv"
@@ -81,36 +80,51 @@ def btnClicked():
 
                     # access attributes
                     stock.execute()
-    else:
+
+        # for debugging
+        print("total", GlobVar.tradecount, "trades from", GlobVar.stockcount, "stocks")
+        print("win ratio is ", (GlobVar.totalwin / GlobVar.tradecount) * 100)
+        print("losses : ", GlobVar.totallose)
+        print("points : ", GlobVar.points)
+        pd.set_option('display.max_rows', None)
+        pd.set_option('display.max_columns', None)
+        pd.set_option('display.width', None)
+        pd.set_option('display.max_colwidth', None)
+
+        resultdf = pd.DataFrame(GlobVar.RESULT,
+                                columns=['Stock', 'Date', 'PrevDelivery%', 'Profit Upto%', 'ClosedAt%', 'P/L'])
+        rw = Ui_MainWindow_3()
+        rw.setupUi(MainWindow_3, resultdf)
+        MainWindow_3.show()
+
+    elif len(GlobVar.Directory) == 0:
+        print("empty directory ")
+        aw = Ui_AlertWindow()
+        aw.setupUi(MainWindow_2)
+        aw.AlertBrowse(MainWindow_2)
+        MainWindow_2.show()
+
+    elif len(GlobVar.rd_button_selected) == 0:
         print("please select buy or sell")
+        aw = Ui_AlertWindow()
+        aw.setupUi(MainWindow_2)
+        aw.AlertBuySell(MainWindow_2)
+        MainWindow_2.show()
 
-    pd.set_option('display.max_rows', None)
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', None)
-    resultdf = pd.DataFrame(GlobVar.RESULT,
-                            columns=['Stock', 'Date', 'PrevDelivery%', 'Profit Upto%', 'ClosedAt%', 'P/L'])
-    print("\n", resultdf)
 
-    # an object for reporting results on Report Window
-    ui.rw = Ui_ReportWindow(resultdf)
-    ui.rw.show()
 
-    #for debugging
-    print("total", GlobVar.tradecount, "trades from", GlobVar.stockcount, "stocks")
-    print("win ratio is ", (GlobVar.totalwin / GlobVar.tradecount) * 100)
-    print("losses : ", GlobVar.totallose)
-    print("points : ", GlobVar.points)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
+    MainWindow_2 = QtWidgets.QMainWindow()
+    MainWindow_3 = QtWidgets.QMainWindow()
+    ui = Ui_HomeWindow()
     ui.setupUi(MainWindow)
     ui.radioButton.toggled.connect(Buy_Selected)
     ui.radioButton_2.toggled.connect(Sell_Selected)
     ui.pushButton.clicked.connect(btnClicked)
-    ui.pushButton_2.clicked.connect(showDialog)
+    ui.pushButton_2.clicked.connect(BrowseDialog)
     ui.comboBox.activated.connect(Change_in_Strategy_Value)
     ui.comboBox_2.activated.connect(Change_in_Entry_Value)
     MainWindow.show()
