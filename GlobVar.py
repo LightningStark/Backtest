@@ -9,5 +9,11 @@ rd_button_selected = []
 EntryAt = []
 strategy = []
 Directory = []
+stocks = ["bergepaint", "bpcl", "cipla", "infy", "mindtree", "reliance", "tatasteel", "cholafin", "exideind",
+              "tatachem", "maruti",
+              "bajfinance", "bandhanbnk", "chollafin", "siemens", "pel", "vedl", "heromotoco", "ramcocem", "bel",
+              "bhel",
+              "adanient", "srtransfin",
+              "suntv", "auropharma", "mfsl", "ujjivan", "jublfood"]
 
 
