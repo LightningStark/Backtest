@@ -121,7 +121,7 @@ def GetReport():
         aw.label.setText("Lower Limit must be LESS than Upper Limit ")
         MainWindow_2.show()
 
-    elif ((Days < 10) & (Days > 200)):
+    elif ((Days < 10) | (Days > 200)):
         aw = Ui_MainWindow_2()
         aw.setupUi(MainWindow_2)
         aw.label.setText("Select Days Betwwen 10 and 200 (just safe values, Both included)")
