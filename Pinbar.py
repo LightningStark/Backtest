@@ -1,4 +1,4 @@
-import GlobVar
+import UniversalVar
 
 # Selling STOCKS
 def Pinbar(self):
@@ -23,20 +23,22 @@ def Pinbar(self):
 
                     if self.TargetUpto >= self.Target:
 
-                        GlobVar.RESULT.insert(GlobVar.count,
-                                              ["", self.date, self.PevDlypercent, self.TargetUpto, closediff, "Profit"])
-                        GlobVar.totalwin += 1
-                        GlobVar.count += 1
-                        GlobVar.tradecount += 1
-                        GlobVar.points = GlobVar.points + (self.nextopen * 0.5 / 100)
+                        UniversalVar.RESULT.insert(UniversalVar.count,
+                                                   ["", self.date, self.PevDlypercent, self.TargetUpto, closediff, "Profit"])
+                        UniversalVar.totalwin += 1
+                        UniversalVar.count += 1
+                        UniversalVar.tradecount += 1
+                        UniversalVar.points = UniversalVar.points + (self.nextopen * 0.5 / 100)
 
                     else:
 
-                        GlobVar.RESULT.insert(GlobVar.count,
-                                              ["", self.date, self.PevDlypercent, self.TargetUpto, closediff, "Loss"])
-                        GlobVar.totallose += 1
-                        GlobVar.count += 1
-                        GlobVar.tradecount += 1
-                        GlobVar.points = GlobVar.points - (self.nextopen - self.nextclose)
+                        UniversalVar.RESULT.insert(UniversalVar.count,
+                                                   ["", self.date, self.PevDlypercent, self.TargetUpto, closediff, "Loss"])
+                        UniversalVar.totallose += 1
+                        UniversalVar.count += 1
+                        UniversalVar.tradecount += 1
+                        UniversalVar.points = UniversalVar.points - (self.nextopen - self.nextclose)
             else:
                 break
+
+        del n , dailyhigh

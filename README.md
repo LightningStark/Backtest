@@ -1,28 +1,27 @@
-# Backtest Historical stock market data for Intraday Trades 
+## Backtesting historical Stock Market data for Intraday Trading
 
-Stock market data Backtesting to Develop and Test Trading Strategy for Intraday Trades, 
-Historical data of stocks were downloaded from India Stock Exchange's website.
-This software was made only for personal use, currently I have no intentions of scaling it for commercial purpose (improved version, Ofcourse!) .  
-To create your own strategy create new files similar to - 'Pinbar/HangingMan/BearEngulg/BullEnguls'.py, and add to Main.py
+![image](https://user-images.githubusercontent.com/57264169/98850758-8b21cb80-2455-11eb-837d-6c313f3c107f.png)
+![Screenshot from 2020-11-11 18-51-26](https://user-images.githubusercontent.com/57264169/98848204-a7236e00-2451-11eb-8d9c-dd742852e13f.png)
 
 To execute the code successfully
-1. run Main.py with python >3.0 interpreter 
+
+1. run Main.py with python >3.0 interpreter
 2. required python packages: pandas, PyQt5
 
+Versions:
+ 
+- Version 1 (current) - stable
 
+- Beta Version - Better Gui with PyQt5
 
-versions:
+- Alpha version - first implementation of GUI with Tkinkter
 
->Version 1 (current) - stable
+future updates
 
->Beta Version - Better Gui with PyQt5
-
->Alpha version - first implemantation of gui with Tkinkter
-
-
-future updates 
-
-1. removal of stock enteries with no trades, currently you will observe there are stocks on output window with corresponding empty cells
+1. removal of stock logging with no trades out of Report Window, currently you might observe few stocks with corresponding empty cells on Report window
 2. create and save new strategies
-3. swing trading(Long Position - holding stock position more for than one day) with moving averages(MA)
+3. swing trading (Long Position - holding stock position more for than one day) with moving averages(MA)
+
+
+
 

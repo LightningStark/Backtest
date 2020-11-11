@@ -2,13 +2,13 @@ from Pinbar import Pinbar
 from HangingMan import HangingMan
 from BearEngulf import BearEngulf
 from BullEngulf import BullEngulf
-import GlobVar
+import UniversalVar
 
 
 def RdButtonSelected(self):
-    if GlobVar.rd_button_selected == "BUY":
+    if UniversalVar.rd_button_selected == "Buy":
         self.TargetUpto = float("{:.2f}".format(((self.nexthigh - self.EntryPrice) / self.EntryPrice) * 100))
-    if GlobVar.rd_button_selected == "SELL":
+    if UniversalVar.rd_button_selected == "Sell":
         self.TargetUpto = float("{:.2f}".format(((self.EntryPrice - self.nextlow) / self.EntryPrice) * 100))
 
 
@@ -40,22 +40,22 @@ class Strategy:
         self.Stoploss = Stoploss
         self.Entry_LowerLimit = 1 + (0.01 * Entry_LowerLimit)
         self.Entry_UpperLimit = 1 + (0.01 * Entry_UpperLimit)
-        if GlobVar.EntryAt == "Next Open":
+        if UniversalVar.EntryAt == "Next Open":
             self.EntryPrice = self.nextopen
             RdButtonSelected(self)
 
-        if GlobVar.EntryAt == "Close":
+        if UniversalVar.EntryAt == "Close":
             self.EntryPrice = self.close
             RdButtonSelected(self)
 
     # trading strategies
     def execute(self):
 
-        if (GlobVar.strategy == "Pinbar"):
+        if (UniversalVar.strategy == "Pinbar"):
             Pinbar(self)
-        if (GlobVar.strategy == "BearEngulf"):
+        if (UniversalVar.strategy == "BearEngulf"):
             BearEngulf(self)
-        if (GlobVar.strategy == "BullEngulf"):
+        if (UniversalVar.strategy == "BullEngulf"):
             BullEngulf(self)
-        if (GlobVar.strategy == "HangingMan"):
+        if (UniversalVar.strategy == "HangingMan"):
             HangingMan(self)
