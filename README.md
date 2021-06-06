@@ -5,16 +5,9 @@
 
 To execute the code successfully
 
-1. run Main.py with python >3.0 interpreter
-2. required python packages: pandas, PyQt5
+1. install packages: pandas==1.2.4,PyQt5==5.15.4
+2. python3 Main.py
 
-Versions:
- 
-- Version 1 (current) - stable
-
-- Beta Version - Better Gui with PyQt5
-
-- Alpha version - first implementation of GUI with Tkinkter
 
 future updates
 
